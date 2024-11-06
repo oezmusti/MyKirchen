@@ -1,16 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <div>
-        fdsahjiohiohj
+<header class="relative shadow-lg px-3 py-2 h-[80px]">
+    <nav class="flex justify-between items-center h-full">
+        <div class="flex items-center gap-3">
+            <div class="cursor-pointer" onclick="openNav()">
+                <img class="" src="../assets\icons\burger.svg" alt="Burger Menue">
+            </div>
+        </div>
+        <div class="w-[130px] md:w-[200px] flex items-center justify-center h-full">
+            Startseite
+        </div>
+        <div class="flex items-center gap-3 h-full">
+            <div class="flex items-center gap-2">
+                <button type="button"
+                    class="hover:bg-clip-text hover:text-transparent bg-gradient-to-br from-[#A3D5D3] to-[#52796F] border-solid border-2 border-[#52796F] font-bold text-white px-5 py-2 rounded-full">
+                    Login
+                </button>
+                <ion-icon name="menu" class=" text-[30px] cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </div>
+    </nav>
+    <div id="side-nav" class="p-8 absolute top-0 left-0 z-50 min-h-screen w-full max-w-72 bg-[#83B799] side-off">
+        <div onclick="openNav()" class="w-auto h-auto cursor-pointer">
+            <img src="../assets/icons/close.svg" alt="close">
+        </div>
     </div>
-</body>
-
-</html>
+</header>
